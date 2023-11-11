@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "  gilroy";
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    
+}
+
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: black ;
+}
+#rightup{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: blueviolet;
+
+}
+
+#rightbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1543747050-1db50a971c00?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-position: center;
+}
+
+#rleft {
+    width: 55%;
+    height: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1463320898484-cdee8141c787?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom ;
+
+}
+#rright{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1620955206264-a5b902a907fb?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom  ;
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr a
+{
+    
+   margin-right: 20px;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 500;
+   color: black;
+}
+
+
+
+#lnavr{
+
+    display: flex;
+    align-items: center;
+}
+
+#lnavr i{
+    color: royalblue;
+}
+
+/* nav css ends here */
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcenter  p{
+    opacity: .6;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+font-size: 13px;
+font-weight: 600;
+}
+
+/* to make this page responsive in mobiles as well */
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+
+    }
+    #main #left{ width: 100%;}
+
+ #main #right{
+    width: 100%;
+ }   
+}
